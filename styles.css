@@ -10,14 +10,12 @@ body {
   background-size: cover;
 }
 
-#comment {
-  width: 100%;
-}
-
+/* Input Elements size */
 input {
   font-size: inherit;
 }
 
+/* Top Container before Form */
 .heading-title {
   text-align: center;
 }
@@ -32,6 +30,14 @@ input {
   font-size: 2rem;
 }
 
+/* Optional Items */
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: e4e4e4;
+}
+
+/* Whole Container */
 .container {
   width: 50%;
   margin: 0 auto;
@@ -41,10 +47,20 @@ input {
 }
 
 /* Form Start  */
+
+/* Form Block elements  */
 .form-group {
   margin: 2%;
 }
 
+/* Form Elements Title */
+.form-title {
+  display: flex;
+  font-family: "Merriweather", serif;
+  margin-bottom: 0.5rem;
+}
+
+/* Form Input Box */
 .form-control {
   display: block;
   width: 100%;
@@ -55,23 +71,18 @@ input {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-
-.form-title {
-  display: flex;
-  font-family: "Merriweather", serif;
-  margin-bottom: 0.5rem;
-}
-
+/* For Radio & CheckBox */
 .container-flex {
   display: flex;
   flex-direction: column;
 }
 
-.clue {
-  margin-left: 0.25rem;
-  font-size: 0.9rem;
-  color: e4e4e4;
+/* Text Area  */
+#comment {
+  width: 100%;
 }
+
+/* Submit Button */
 #submit {
   display: block;
   width: 100%;
