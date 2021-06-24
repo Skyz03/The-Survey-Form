@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -5,5 +7,48 @@
 body {
   background: url(https://picsum.photos/seed/picsum/200/?blur) no-repeat;
   background-size: cover;
-  height: 100px;
+}
+
+#comment {
+  width: 100%;
+}
+
+.heading-title {
+  text-align: center;
+}
+
+.heading-title #title,
+#description {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+}
+
+.heading-title #title {
+  font-size: 2rem;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3%;
+  background-color: #005a8d;
+  color: #fff5fd;
+}
+
+/* Form Start  */
+.form-group {
+  margin: 2%;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit {
+  width: 100%;
 }
