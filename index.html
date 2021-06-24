@@ -9,8 +9,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
     <!-- CSS StyleSheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -26,23 +24,24 @@
         <div class="container">
             <form action="#" id="survey-form">
                 <div class="form-group">
-                    <label for="name" id="name-label">Name</label>
+                    <label class="form-title" for="name" id="name-label">Name</label>
                     <input class="form-control" type="text" id="name" placeholder="Enter your name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email" id="email-label"> Email</label>
+                    <label class="form-title" for="email" id="email-label"> Email</label>
                     <input class="form-control" type="email" id="email" placeholder="Enter your email" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="number" id="number-label">Age(optional)</label>
+                    <label class="form-title" for="number" id="number-label">Age <span class="clue">
+                            (optional)</span></label>
                     <input class="form-control" type="number" id="number" name="age" min="10" max="99"
                         placeholder="Age">
                 </div>
 
                 <div class="form-group">
-                    <label for="role" id="role"> What best describe your role</label>
+                    <label class="form-title" for="role" id="role"> What best describe your role</label>
                     <select class="form-control" name="role" id="dropdown">Select current role
                         <option value="" disabled="" selected=""> Select current role</option>
                         <option value="Student"> Student </option>
@@ -53,7 +52,7 @@
                 </div>
 
                 <div class="form-group">
-                    <p>Would you recommend freeCode Camp to your friend?</p>
+                    <p class="form-title">Would you recommend freeCode Camp to your friend?</p>
                     <div class="container-flex">
                         <label>
                             <input type="radio" name="user-recommend" value="definitely"> Definitely
@@ -69,7 +68,8 @@
                 </div>
 
                 <div class="form-group">
-                    <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                    <p class="form-title">What would you like to see improved? <span class="clue">(Check all that
+                            apply)</span></p>
                     <div class="container-flex">
                         <label>
                             <input type="checkbox" value="front-end-projects" name="preference">Front-end-projects
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="form-group">
-                    <p>Any comments or suggestions?</p>
+                    <p class="form-title">Any comments or suggestions?</p>
                     <textarea name="comment" id="comment" cols="50" rows="5"
                         placeholder="Enter your comment here..."></textarea>
                 </div>
