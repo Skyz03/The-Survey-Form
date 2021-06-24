@@ -16,11 +16,86 @@
 <body>
 
     <main>
+        <h1 id="title">The Survey Form</h1>
+        <p id="description">Thank you for your time to contibute to make our platform better.</p>
 
+
+        <form action="#" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label"> Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age(optional)</label>
+                <input type="number" id="number" name="age" min="10" max="99" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <label for="role" id="role"> What best describe your role</label>
+                <select name="role" id="dropdown">Select current role
+                    <option value="" disabled="" selected=""> Select current role</option>
+                    <option value="Student"> Student </option>
+                    <option value="job"> Full time job</option>
+                    <option value="lerner"> Full time learner</option>
+                    <option value="other">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend freeCode Camp to your friend?</p>
+                <label>
+                    <input type="radio" name="user-recommend" value="definitely"> Definitely
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="maybe"> Maybe
+                </label>
+
+                <label>
+                    <input type="radio" name="user-recommend" value="not-sure"> Not Sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                <label>
+                    <input type="checkbox" value="front-end-projects" name="preference">Front-end-projects
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Back-end-projects" name="preference">Back-end-projects
+                </label>
+                <label>
+                    <input type="checkbox" value="Data-visualization" name="preference">Data-visualization
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Videos" name="preference">Videos
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Meetups" name="preference">Meetups </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comment" cols="50" rows="5"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="for">
+                <button id="submit" type="submit">Submit </button>
+            </div>
+        </form>
     </main>
 
 
-    <script src="" async defer></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
